@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="YemekTarifi_Sitesi.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Kullanici.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style3 {
+            text-align: center;
+        }
+        .auto-style4 {
+            width: 700px;
+            height: 20px;
+        }
+        .auto-style5 {
+            float: left;
+            width: 200px;
+            height: auto;
+        }
+        .auto-style6 {
+            width: 100%;
+        }
+        .auto-style7 {
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="height: 150px; width: 700px; margin-left: 300px; background-color:#96cadf ;">
+            <p>
+                <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/BannerFoto/adminlogin.jpeg" Width="708px" />
+            </p>
+        </div>
+        <div style="margin-left: 300px; width: 700px; height: 20px;"></div>
+       
+
+        <div style="margin-left: 300px; " class="auto-style4"></div>
+        <div style="margin-left: 300px; width: 700px; height: 300px;">
+             <div style=" margin-left:0px; background-color:#96cadf" class="auto-style5">
+                 <div class="auto-style3">
+                     <table class="auto-style6">
+                         <tr>
+                             <td><strong>MENÜLER</strong></td>
+                         </tr>
+                         <tr>
+                             <td>&nbsp;</td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style7" style="border-top-style: solid; border-width: thin; border-top-color: #FFFFFF; border-bottom-style: solid; border-bottom-color: #FFFFFF;">
+                                 <a href="Kategoriler.aspx">KATEGORİLER</a></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style7" style="border-top-style: solid; border-width: thin; border-top-color: #FFFFFF; border-bottom-style: solid; border-bottom-color: #FFFFFF;">
+                                 <a href="Yemekler.aspx">YEMEKLER</a></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style7" style="border-top-style: solid; border-width: thin; border-top-color: #FFFFFF; border-bottom-style: solid; border-bottom-color: #FFFFFF;">
+                                  <a href="Yorumlar.aspx">YORUMLAR</a></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style7" style="border-top-style: solid; border-width: thin; border-top-color: #FFFFFF; border-bottom-style: solid; border-bottom-color: #FFFFFF;">
+                                 <a href="Mesajlar.aspx">MESAJLAR</a></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style7" style="border-top-style: solid; border-width: thin; border-top-color: #FFFFFF; border-bottom-style: solid; border-bottom-color: #FFFFFF;">
+                                 <a href="GününYemeğiAdmin.aspx">GÜNÜN YEMEĞİ</a></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style7" style="border-top-style: solid; border-width: thin; border-top-color: #FFFFFF; border-bottom-style: solid; border-bottom-color: #FFFFFF;">
+                                 <a href="Tarifler.aspx">TARİFLER</a></td>
+                         </tr>
+                         <tr>
+                             <td class="auto-style7" style="border-top-style: solid; border-width: thin; border-top-color: #FFFFFF; border-bottom-style: solid; border-bottom-color: #FFFFFF;">
+                                 <a href="HakkimizdaAdmin.aspx">HAKKIMIZDA</a></td>
+                         </tr>
+                         <tr>
+                             <td>&nbsp;</td>
+                         </tr>
+                     </table>
+                     <br />
+                     <br />
+                 </div>
+             </div>  <%--float:left; divi sola konumlandırır.Bundan sonra gelecek div yanına konumlanır --%>
+             <div style=" float:left; margin-left:50px; width: 450px; height: auto; background-color:#96cadf">
+                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <%-- RenderBody gibi değişen kısım--%>
+                   </asp:ContentPlaceHolder>
+             </div> 
+
+        </div>
+      
+
+
+    </form>
+</body>
+</html>
+
+
